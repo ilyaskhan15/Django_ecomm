@@ -4,11 +4,8 @@ from django.core.validators import MinValueValidator
 from django.db import models
 from uuid import uuid4
 
-<<<<<<< HEAD
 from store.validators import validate_file_size
 
-=======
->>>>>>> 0034254 (all added)
 
 class Promotion(models.Model):
     description = models.CharField(max_length=255)
@@ -48,14 +45,11 @@ class Product(models.Model):
         ordering = ['title']
 
 
-<<<<<<< HEAD
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='image')
     image = models.ImageField(upload_to='store/images', validators= [validate_file_size])
 
 
-=======
->>>>>>> 0034254 (all added)
 class Customer(models.Model):
     MEMBERSHIP_BRONZE = 'B'
     MEMBERSHIP_SILVER = 'S'

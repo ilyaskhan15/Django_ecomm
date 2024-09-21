@@ -18,7 +18,6 @@ class InventoryFilter(admin.SimpleListFilter):
     def queryset(self, request, queryset: QuerySet):
         if self.value() == '<10':
             return queryset.filter(inventory__lt=10)
-<<<<<<< HEAD
         
 
 class ProductImageInline(admin.TabularInline):
@@ -33,8 +32,6 @@ class ProductImageInline(admin.TabularInline):
         css = {
             'all' : ['store/style.css']
         }
-=======
->>>>>>> 0034254 (all added)
 
 
 @admin.register(models.Product)
@@ -51,10 +48,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_per_page = 10
     list_select_related = ['collection']
     search_fields = ['title']
-<<<<<<< HEAD
     inlines = [ProductImageInline]
-=======
->>>>>>> 0034254 (all added)
 
     def collection_title(self, product):
         return product.collection.title

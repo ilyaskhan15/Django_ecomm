@@ -12,11 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
-<<<<<<< HEAD
 import os
 from celery.schedules import crontab
-=======
->>>>>>> 0034254 (all added)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,10 +43,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework',
     'djoser',
-<<<<<<< HEAD
     'corsheaders',
-=======
->>>>>>> 0034254 (all added)
     'playground',
     'debug_toolbar',
     'store',
@@ -59,10 +53,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-<<<<<<< HEAD
     'corsheaders.middleware.CorsMiddleware',
-=======
->>>>>>> 0034254 (all added)
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -79,13 +70,10 @@ INTERNAL_IPS = [
     # ...
 ]
 
-<<<<<<< HEAD
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8001",
     "http://127.0.0.1:8001",
 ]
-=======
->>>>>>> 0034254 (all added)
 ROOT_URLCONF = 'storefront.urls'
 
 TEMPLATES = [
@@ -113,17 +101,10 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-<<<<<<< HEAD
         'NAME': 'storefront',
         'HOST': 'localhost',
-        'USER': 'ilyaskhan',
-        'PASSWORD': '@Kkhan123'
-=======
-        'NAME': 'storefront3',
-        'HOST': 'localhost',
         'USER': 'root',
-        'PASSWORD': 'MyPassword'
->>>>>>> 0034254 (all added)
+        'PASSWORD': '@Kkhan123'
     }
 }
 
@@ -166,13 +147,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-<<<<<<< HEAD
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
-=======
->>>>>>> 0034254 (all added)
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -198,7 +176,6 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1)
 }
-<<<<<<< HEAD
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'localhost'
@@ -220,5 +197,3 @@ CELERY_BEAT_SCHEDULE = {
         'args' : ['Hello world'], 
     }
 }
-=======
->>>>>>> 0034254 (all added)
