@@ -1,7 +1,7 @@
 # To use Django e-Commerce 
-# git clone it
-# open it in vscode and run this command
+# git clone "add the urls"
 # make sure python is in your machine
+# open it in vscode and run this command
 # pip install pipenv
 # pipenv install
 # pipenv shell
